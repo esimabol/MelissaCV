@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    overflow-x: hidden;
+    background-color: #fafafa;
+    padding: 0 8px;
+}
+header, nav, article, section, aside, hgroup, figcaption, figure, footer {
+    display: block;
+}
+
+.container {
+    width: 95.73%;
+    margin: 0 auto;
+}
+
+img {
+    width: 100%;   
+}
+
+.header {
+    height: 80px;
+    background-color: rgb(255, 238, 223);
+}
+.header figure {
+    height: 32px;
+    align-self: center;
+}
+
+.header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;       
+}
+
+.header h1 {
+    font-family: 'Zen Loop', cursive;
+    font-size: 32px;
+    display: inline;
+    line-height: 80px;
+    color: #F59841;
+    padding-left: 12px;
+}
+
+.menu-icon{
+    height: 32px;
+    cursor: pointer;
+}
+
+/*Nav bar*/
+.nav {    
+    background-color: rgb(255, 238, 223);
+    width:100%;
+    display: none;
+}
+
+.nav ul li{
+    list-style-type: none;
+    padding: 12px 16px;
+}
+
+.nav li a {
+    text-decoration: none;
+    color: #555;
+    font-size: 1.1rem;
+}
+
+/*Hero*/
+.hero {
+    background-color: #fff;
+    padding: 60px 0;
+}
+.hero .container {
+    text-align: center;
+}
+
+.hero figure img {
+    width:250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 2%;
+}
+
+.hero article p {
+    font-family: 'Rasa', serif;
+    font-size: 1.3rem;
+    text-align: justify;
+    color:#555;
+    margin-bottom: 16px;
+    line-height: 50px;
+}
+
+.hero-title {
+    font-family: 'Zen Loop', cursive;
+    font-size: 2.6rem;
+    color:#F59841;
+    margin-bottom: 5%;
+}
+
+/*Experiencia LAboral*/
+
+.cards {
+    background-color: #FFEEDF;
+}
+
+.cards div {   
+    background: -webkit-linear-gradient(left,#F59841, #fff);   
+}
+
+.cards h2::before {
+    content: url('../img/job-experience.svg');     
+    padding-left: 4%;;
+}
+
+
+
+.cards img {
+    height: 40px;
+}
+
+
+
+@media(min-width: 750px) {
+    .nav {
+        width:50%;
+    }
+    .hero {
+        margin-top: 2%;
+        box-shadow: 6px 4px 10px #cdcdcd;
+    }
+    .hero .container {
+        text-align: left;
+    }
+    .hero article p {
+        font-size: 1.4rem;
+    }
+    .hero-title {
+        font-size: 3rem;        
+        margin-bottom: 12px;
+        margin-bottom: 2%;
+    }
+}
+
+@media(min-width:1000px) {
+    .nav {
+        width: 20%; 
+        display: block;       
+    }
+
+    .nav ul li {
+        text-align: left;
+    }
+
+    .nav li a:hover {
+        border-bottom: 1px solid #F59841;
+    }
+
+
+}
+
+ 
