@@ -10,8 +10,7 @@ html {
 
 body {
     overflow-x: hidden;
-    background-color: #fafafa;
-    padding: 0 8px;
+    background-color: #fafafa;   
 }
 header, nav, article, section, aside, hgroup, figcaption, figure, footer {
     display: block;
@@ -77,6 +76,7 @@ img {
 .hero {
     background-color: #fff;
     padding: 60px 0;
+    margin-bottom: 16px;
 }
 .hero .container {
     text-align: center;
@@ -107,26 +107,102 @@ img {
 }
 
 /*Experiencia LAboral*/
+.job-experience {
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+}
 
 .cards {
+    width:100%;    
     background-color: #FFEEDF;
+    margin-bottom: 16px;
 }
 
-.cards div {   
-    background: -webkit-linear-gradient(left,#F59841, #fff);   
+.cards-title {
+    background: -webkit-linear-gradient(left,#F59841, #fff); 
 }
 
-.cards h2::before {
-    content: url('../img/job-experience.svg');     
-    padding-left: 4%;;
+.cards-title .container {   
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;  
+    align-content: center;
+    height: 50px;
+    gap: 10px;   
+}
+.cards-title figure {
+    width: 50px;
+    padding-left: 10px;
 }
 
-
-
-.cards img {
-    height: 40px;
+.cards-title h2 {
+    font-family: 'Zen Loop', cursive;
+    font-size:2.2rem;
 }
 
+.cards-description .container {
+    line-height: 30px;
+}
+
+.cards-description h2 {
+    font-size:2.1rem;
+    padding-top: 12px;
+}
+
+.cards-description h3 {
+    font-size:1.1rem;
+}
+
+.cards-description p {
+    font-family: 'Rasa', serif;
+}
+
+.cards-description ul {
+    padding-left: 16px;
+}
+
+.last-paragraph {
+    margin-bottom: 12px;
+}
+
+/*Educacion*/
+
+.education .container {
+    border-bottom: 1px solid #F59841;
+    
+}
+
+.education figure {
+    display: inline-block;
+    width:50px;
+    height: 50px;
+}
+
+.education h2 {
+    font-size:2.3rem;
+    display: inline-block;    
+}
+
+.educards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 6px 4px 10px #cdcdcd;
+    margin-top:3%;
+}
+
+.education-description {
+    font-family: 'Rasa', serif;
+    font-size: 1.2rem;
+}
+
+.educards figure {
+    width: 180px;
+    height: 150px;
+}
 
 
 @media(min-width: 750px) {
@@ -148,9 +224,24 @@ img {
         margin-bottom: 12px;
         margin-bottom: 2%;
     }
+    .job-experience {
+        justify-content: space-around;
+    }
+    .educards figure {
+        width: 250px;
+        height: 200px;
+    }
+    .education-description {
+        font-size: 1.5rem;
+    }
+   
 }
 
+
 @media(min-width:1000px) {
+    body {
+        padding: 0 8px;
+    }
     .nav {
         width: 20%; 
         display: block;       
@@ -163,7 +254,18 @@ img {
     .nav li a:hover {
         border-bottom: 1px solid #F59841;
     }
+    .job-experience {
+        padding-top: 60px;
+        justify-content: space-between;
+    }
+    .cards {
+        width:47%;
+    }
 
+    .educards figure {
+        width: 300px;
+        height: 250px;
+    }
 
 }
 
