@@ -22,7 +22,8 @@ header, nav, article, section, aside, hgroup, figcaption, figure, footer {
 }
 
 img {
-    width: 100%;   
+    max-width: 100%;   
+    height: auto;
 }
 
 .header {
@@ -120,7 +121,7 @@ img {
 }
 
 .cards-title {
-    background: -webkit-linear-gradient(left,#F59841, #fff); 
+    background: -webkit-linear-gradient(left,#F59841, #fff);     
 }
 
 .cards-title .container {   
@@ -132,21 +133,25 @@ img {
     gap: 10px;   
 }
 .cards-title figure {
-    width: 50px;
-    padding-left: 10px;
+    width: 40px;
+    height: 40px;
+   
 }
 
 .cards-title h2 {
     font-family: 'Zen Loop', cursive;
     font-size:2.2rem;
+    letter-spacing: 2px;
 }
 
 .cards-description .container {
     line-height: 30px;
+    padding:8px 3%;
+    letter-spacing: .5px;
 }
 
 .cards-description h2 {
-    font-size:2.1rem;
+    font-size:1.9rem;
     padding-top: 12px;
 }
 
@@ -159,7 +164,7 @@ img {
 }
 
 .cards-description ul {
-    padding-left: 16px;
+    padding-left: 8%;
 }
 
 .last-paragraph {
@@ -175,36 +180,112 @@ img {
 
 .education figure {
     display: inline-block;
-    width:50px;
-    height: 50px;
+    width:40px;
+    height: 40px;
 }
 
 .education h2 {
-    font-size:2.3rem;
+    font-family: 'Zen Loop', cursive;
+    font-size:2.2rem;
+    letter-spacing: 2px;
     display: inline-block;    
+    padding-left: 8px;
 }
 
 .educards{
+    height: 200px;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-evenly;
     align-items: center;
     box-shadow: 6px 4px 10px #cdcdcd;
+    padding:0 2%;
     margin-top:3%;
 }
 
 .education-description {
+    width: 365px;    
     font-family: 'Rasa', serif;
     font-size: 1.2rem;
+    padding:0 1%;
 }
 
 .educards figure {
-    width: 180px;
-    height: 150px;
+    width: 180px;  
+       
 }
 
+.educards-description {
+    display: block;
+    box-shadow: 6px 4px 10px #cdcdcd;
+    padding:0 2%;
+    margin-top:3%;
+}
 
+.educards-description article {
+    font-family: 'Rasa', serif;
+    font-size: 1.1rem;
+    margin-bottom: 8%;
+    padding: 3% 0;
+}
+
+.references {
+    background: -webkit-linear-gradient(left,#F59841, #fff);
+    height: 50px;  
+}
+
+.references h2 {
+    font-family: 'Zen Loop', cursive;
+    font-size:2.2rem;
+    letter-spacing: 2px;
+    line-height: 50px;
+    
+}
+.contact-cards {
+    margin: 4% 0;
+    padding:2% 0;
+    border: 2px solid #F59841;  
+}
+
+.contact-cards .container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-cards-img-container {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+}
+.contact-cards-description {
+    width:250px;
+}
+
+.contact-cards-description p {
+    font-family: 'Rasa', serif;
+    font-size: 1.1rem;
+    line-height: 35px;
+}
+
+.footer {
+    background-color: #F59841;
+}
+
+.footer .container {
+    text-align: center;
+}
+
+.footer p {
+    font-family: 'Rasa', serif;
+    font-size: 1.1rem;
+}
+.footer div {
+    padding:4% 0;
+}
 @media(min-width: 750px) {
     .nav {
         width:50%;
@@ -228,8 +309,7 @@ img {
         justify-content: space-around;
     }
     .educards figure {
-        width: 250px;
-        height: 200px;
+        width: 250px;        
     }
     .education-description {
         font-size: 1.5rem;
@@ -263,8 +343,7 @@ img {
     }
 
     .educards figure {
-        width: 300px;
-        height: 250px;
+        width: 300px;        
     }
 
 }
